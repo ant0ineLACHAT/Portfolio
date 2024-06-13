@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Accueil</a></li>
+                <li class="dropdown">
+                    <a  class="dropbtn">Mes projets</a>
+                    <div class="dropdown-content">
+                        <a href="/BUT1">BUT 1</a>
+                        <a href="/BUT2">BUT 2</a>
+                        <a href="/BUT3">BUT 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn">Mon stage</a>
+                    <div class="dropdown-content">
+                        <a href="/stage2023">Stage 2023</a>
+                        <a href="/stage2024">Stage 2024</a>
+                    </div>
+                </li>
+                <li><a href="/about">À propos de moi</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="accueil">
+            <div class="content">
+                <div class="text">
+                    <h1><%= title %></h1>
+                    <p>Bienvenue sur mon portfolio ! Je m'appelle Antoine LACHAT, actuellement étudiant en troisième année d'informatique à l'IUT Nord Franche-Comté à Belfort.</p>
+                    <br>
+                    <p>Ce portfolio présente mes projets réalisés pendant ma formation, mon expérience de stage et plus encore.</p>
+                </div>
+                <img src="img/profilPhoto.png" alt="Photo de profil">
+            </div>
+        </section>
+        <section id="cta">
+            <h2>Explorez mes projets</h2>
+            <p>N'hésitez pas à explorer mes projets pour en savoir plus sur mon travail.</p>
+        </section>
+    </main>
+</body>
+</html>

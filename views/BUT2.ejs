@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon stage</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Accueil</a></li>
+                <li class="dropdown">
+                    <a  class="dropbtn">Mes projets</a>
+                    <div class="dropdown-content">
+                        <a href="/BUT1">BUT 1</a>
+                        <a href="/BUT2">BUT 2</a>
+                        <a href="/BUT3">BUT 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn">Mon stage</a>
+                    <div class="dropdown-content">
+                        <a href="/stage2023">Stage 2023</a>
+                        <a href="/stage2024">Stage 2024</a>
+                    </div>
+                </li>
+                <li><a href="/about">À propos de moi</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Mon Stage de 2023</h1>
+        <section id="subject">
+            <h2>Présentation</h2>
+            <p>J'ai eu l'opportunité de réaliser mon stage de ma seconde année dans l'entreprise Tech4Gaia à Strasbourg. Se stage s'est déroulé du 3 avril 2023 au 26 mai 2023 (8 semaines).</p>
+            <p>
+                Pendant mon stage, j'ai été chargé de mettre en place une partie "communautaire" dans l'application, divisée en deux pages principales : la "présentation d'articles" et un "réseau d'entraide". Ces fonctionnalités revêtent une importance capitale pour favoriser le développement d'une véritable communauté apicole, permettant aux apiculteurs d'échanger des connaissances, de partager des expériences et de s'entraider mutuellement.
+            </p>
+            <p>
+                Mon rôle consiste à créer un environnement propice à la collaboration et à l'échange d'informations au sein de cette communauté. Il est crucial de réunir les apiculteurs afin qu'ils puissent partager leurs réussites, surmonter les défis et trouver des solutions communes aux problèmes rencontrés. Cette initiative vise à favoriser le partage des bonnes pratiques, l'acquisition de nouvelles connaissances et l'émergence d'idées novatrices, renforçant ainsi le sentiment d'appartenance et de solidarité entre les apiculteurs, et contribuant positivement à la préservation des abeilles.
+
+            <p>
+                Au début de mon stage, la partie communautaire de l'application n'existait pas. J'ai donc utilisé le cahier des charges, les informations fournies par mon tuteur et la maquette de l'application créée par le développeur Front-end pour élaborer un véritable espace pour les utilisateurs.
+
+Dans un premier temps, j'ai travaillé sur la création, la suppression et l'édition d'articles dans la page "Présentation d'articles". De plus, j'ai mis en place la consultation des articles dans une liste détaillée par les différents usagers de la communauté.
+
+Dans un deuxième temps, j'ai développé la page "Réseau d'entraide", comprenant deux parties où les utilisateurs peuvent soit faire une demande d'aide (par exemple : "J'ai besoin d'un extracteur à miel"), soit proposer de l'aide (par exemple : "Je peux prêter un extracteur à miel"), avec le déploiement d'une carte pour localiser les demandes des différents usagers.
+            </p>
+
+        </section>
+
+        <section id="objectives">
+            <h2>Cahier des charges</h2>
+            <p><strong>3. Objectifs et fonctionnalités attendues</strong></p>
+            <p>Rédigé le 06/04/2023 par Jean CHARBONNEAU</p>
+            <p>La partie "Communauté" du projet se divise en deux fonctionnalités principales :</p>
+            <ul>
+                <li>
+                    <p><strong>3.1 Articles d'experts</strong></p>
+                    <ul>
+                        <li>Un utilisateur logué doit pouvoir proposer des articles d'experts.</li>
+                        <li>Les articles sont composés de :
+                        <ul>
+                            <li>- Titre</li>
+                            <li>- Date</li>
+                            <li>- Auteur</li>
+                            <li>- (Facultatif) Sous-titre</li>
+                            <li>- Contenu (Markdown? Editeur avancé?)</li>
+                            <li>- Image de type Thumbnail (vignette)</li>
+                            <li>- (Facultatif) Image plus grande pour l’affichage plein écran.</li>
+                        </li>
+                        </ul>
+                        <li>Les articles proposés seront soumis à validation par les administrateurs Tech4Gaia (l'interface de validation n'est pas incluse dans ce projet).</li>
+                        <li>Les utilisateurs pourront consulter les articles existants.</li>
+                        <li>L'auteur d'un article pourra le modifier avant validation ou le supprimer.</li>
+                        <li>Si un article validé est modifié, la modification sera soumise à validation.</li>
+                        <li>L'article original restera accessible tant que la validation n'est pas effectuée.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>3.2 Réseau d'entraide</strong></p>
+                    <ul>
+                        <li>Les utilisateurs pourront faire une demande d'aide (ex. "J'ai besoin d'un extracteur à miel") en précisant le lieu nécessaire.</li>
+                        <li>Les utilisateurs pourront proposer de l'aide (ex. "Je peux prêter un extracteur à miel").</li>
+                        <li>Les demandes et propositions d'aide seront consultables sur une carte, à partir d'une zone initiale (affichage de marqueur sur la position des demandes (le principe pour récupérer les coordonnées de la demande n’est pas contenu dans ce projet).</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>Pour l’ensemble des fonctionnalités : gestion des erreurs et des cas d'échec</p>
+            <p><strong>3.3 Technologies</strong></p>
+            <ul>
+                <li>Front-End: Svelte</li>
+                <li>Back-End: Sveltekit, Supabase</li>
+                <li>Base de données : Supabase (PostgreSQL)</li>
+            </ul>
+        </section>
+        
+        
+        <section id="screenshots">
+            <h2>Réalisation</h2>
+            <div class="screenshot-grid">
+                <div class="screenshot">
+                    <h3>Maquette de l'application (réaliser par le développeur front-end)</h3>
+                    <img src="img/MaquetteArticle.png" alt="Capture d'écran avant">
+                    <img src="img/maquetteEntraide.png" alt="Capture d'écran 2 avant">
+                </div>
+                <div class="screenshot">
+                    <h3>Le rendu final de mon travail</h3>
+                    <img src="img/Article.png" alt="Capture d'écran après">
+                    <img src="img/Entraide.png" alt="Capture d'écran 2 après">
+                </div>
+            </div>
+        </section>
+
+        <section id="compétences">
+            <h2>Bilan de compétences</h2>
+            <li>Faire évoluer une application existante</li>
+            <li>Vérifier et valider la qualité de l’application par des test</li>
+            <li>Comprendre les enjeux et moyens de sécurisation des données et du code</li>
+            <li>Utiliser des techniques algorithmiques adaptés pour des problèmes complexes (AES 256)</li>
+            <li>Développer des interfaces utilisateurs</li>
+        </section>
+        
+    </main>
+</body>
+</html>

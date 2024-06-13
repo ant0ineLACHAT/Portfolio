@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon stage</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Accueil</a></li>
+                <li class="dropdown">
+                    <a  class="dropbtn">Mes projets</a>
+                    <div class="dropdown-content">
+                        <a href="/BUT1">BUT 1</a>
+                        <a href="/BUT2">BUT 2</a>
+                        <a href="/BUT3">BUT 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn">Mon stage</a>
+                    <div class="dropdown-content">
+                        <a href="/stage2023">Stage 2023</a>
+                        <a href="/stage2024">Stage 2024</a>
+                    </div>
+                </li>
+                <li><a href="/about">À propos de moi</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Mon Stage de 2024</h1>
+        <section id="subject">
+            <h2>Présentation</h2>
+            <p>J'ai eu l'opportunité de réaliser mon stage de ma troisième année au Grand Belfort, une communauté d'agglomération, à Belfort. Se stage s'est déroulé du 16 janvier 2024 au 22 avril 2024 (14 semaines).</p>
+            <p>
+                Mon stage avait pour objectif de moderniser les formulaires utilisés par le grand public et les services internes. Cette modernisation visait à améliorer l'interface utilisateur et à renforcer les fonctionnalités côté serveur en migrant vers des technologies plus récentes telles que Node.js, Sequelize, Vue.js et PostgreSQL.
+
+                Les formulaires à moderniser couvraient un large éventail de demandes, notamment les réservations de vélos électriques, les demandes de chèques culture et les réservations de salles municipales. Mon rôle consistait à repenser ces formulaires pour améliorer leur esthétique, leur sécurité et leur efficacité.
+                
+                Cette initiative répondait à un besoin croissant de sécurité informatique et à la nécessité d'optimiser les processus internes de l'organisation. En modernisant ces outils, nous visons à garantir une meilleure expérience utilisateur et à faciliter la maintenance future des applications.
+                
+                Ce projet représente une opportunité stimulante de mettre en pratique mes compétences en développement web dans un environnement professionnel dynamique et en constante évolution.
+            </p>
+        </section>
+
+        <section id="objectives">
+            <h2>Cahier des charges</h2>
+            <p><strong>3. Descriptif Fonctionnel</strong></p>
+            <p>L'objectif est de moderniser une vingtaine de formulaires, classés par priorité de 1 à 9, en utilisant des technologies récentes. Certains formulaires sont destinés au public, tandis que d'autres sont réservés aux services internes du Grand Belfort et sont accessibles uniquement depuis le réseau intranet.</p>
+            <ul>
+                <li>
+                    <p><strong>3.1.1 Modernisation des Formulaires</strong></p>
+                    <ul>
+                        <li>Utilisation de technologies récentes tout en préservant les fonctionnalités existantes.</li>
+                        <li>Amélioration de l'expérience utilisateur et renforcement de la sécurité des données.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>3.1.2 Interface Utilisateur</strong></p>
+                    <ul>
+                        <li>Repenser l'interface pour améliorer son esthétique et sa convivialité.</li>
+                        <li>Fournir une interface moderne et intuitive, tout en conservant les fonctionnalités essentielles.</li>
+                        <li>Ajout de fonctionnalités de vérification pour le formulaire "Check Culture" afin de garantir l'unicité de l'utilisateur et de prévenir la fraude.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>3.1.3 Fonctionnalités Côté Serveur</strong></p>
+                    <ul>
+                        <li>Mise à jour des fonctionnalités côté serveur pour utiliser les nouvelles technologies.</li>
+                        <li>Gestion sécurisée des interactions avec la base de données PostgreSQL.</li>
+                        <li>Gestion des erreurs et des cas d'échec pour l'ensemble des fonctionnalités.</li>
+                    </ul>
+                </li>
+            </ul>
+        
+            <p><strong>3.2 Contraintes Techniques</strong></p>
+            <ul>
+                <li>
+                    <p><strong>3.2.1 Technologies</strong></p>
+                    <ul>
+                        <li>Front-End et Back-End au choix.</li>
+                        <li>Base de données : PostgreSQL 16.</li>
+                        <li>Logiciel de gestion de versions : SVN.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>3.2.2 Gestion des Données et des Codes Source</strong></p>
+                    <ul>
+                        <li>Les codes sources et les données sont stockés dans un répertoire SVN sur l'ordinateur attribué.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>3.2.3 Production des Documents</strong></p>
+                    <ul>
+                        <li>Élaboration d'une documentation technique pour chaque formulaire, fournissant des instructions détaillées sur le déploiement, la gestion de la base de données, les fonctionnalités de l'application et les résultats attendus.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        
+        <section id="screenshots">
+            <h2>Réalisation</h2>
+            <div class="screenshot-grid">
+                <div class="screenshot">
+                    <h3>Avant</h3>
+                    <img src="img/form3.png" alt="Capture d'écran avant">
+                    <img src="img/form4.png" alt="Capture d'écran 2 avant">
+                </div>
+                <div class="screenshot">
+                    <h3>Après</h3>
+                    <img src="img/form1.png" alt="Capture d'écran après">
+                    <img src="img/form2.png" alt="Capture d'écran 2 après">
+                </div>
+            </div>
+            <p>* Les blocs en noir sont pour cacher des informations confidentiels</p>
+        </section>
+
+        <section id="compétences">
+            <h2>Bilan de compétences</h2>
+            <li>Faire évoluer une application existante</li>
+            <li>Vérifier et valider la qualité de l’application par des test</li>
+            <li>Comprendre les enjeux et moyens de sécurisation des données et du code</li>
+            <li>Utiliser des techniques algorithmiques adaptés pour des problèmes complexes (AES 256)</li>
+            <li>Développer des interfaces utilisateurs</li>
+        </section>
+        
+    </main>
+</body>
+</html>
